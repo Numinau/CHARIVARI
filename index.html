@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Charivari - Troupe de théâtre amateur</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE : logo + navigation + bouton thème ===== -->
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/logotheatre.png" alt="Logo : deux masques de théâtre">
+        </a>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#spectacles">Spectacles</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" type="button">Changer de thème ☀️🌙</button>
+    </header>
+
+    <main>
+
+        <!-- ===== ACCUEIL ===== -->
+        <section id="accueil">
+            <h1>LE CHARIVARI</h1>
+            <img class="affiche" src="img/CHARIVARI.jpg" alt="Logo du Charivari, troupe de théâtre">
+        </section>
+
+        <!-- ===== À PROPOS ===== -->
+        <section id="apropos">
+            <h2>À propos de nous</h2>
+            <p>
+                Le Charivari Théâtre est une troupe de théâtre amateur qui, depuis plus de 20 ans, sévit à
+                Houplin-Ancoisne et sur les planches des communes environnantes.
+                Nous nous retrouvons chaque mardi à 20h00 à la salle des fêtes d'Houplin-Ancoisne pour répéter
+                de nouveaux spectacles, classiques ou créations originales.
+                De Molière à Feydeau, d'Alfred Jarry aux contes des frères Grimm, Le Charivari a déjà exploré
+                un répertoire assez éclectique à travers une vingtaine de pièces.
+                N'hésitez pas à nous rejoindre !
+            </p>
+
+            <h3>Notre histoire</h3>
+            <ol>
+                <li>Été 1995 : au départ, quelques ados qui s'ennuyaient pendant l'été.</li>
+                <li>2001 : la troupe devient une association.</li>
+                <li>2026 : une trentaine de fidèles, autour d'un metteur en scène professionnel.</li>
+            </ol>
+
+            <h3>Membres de la troupe</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Rôle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marie-Laure FERNANDES</td>
+                        <td>Présidente</td>
+                    </tr>
+                    <tr>
+                        <td>Vincent THOMAS</td>
+                        <td>Metteur en scène</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ===== SPECTACLES : 3 cartes (articles) ===== -->
+        <section id="spectacles">
+            <h2>Nos représentations</h2>
+            <div class="cartes">
+                <article>
+                    <img src="img/stabat.jpg" alt="Affiche du spectacle Stabat Soror Furiosa">
+                    <h3>Stabat Soror Furiosa</h3>
+                    <p>Du 4 au 7 juin 2026</p>
+                    <a href="https://www.helloasso.com/associations/le-charivari-theatre/evenements/stabat-soror-furiosa"
+                        target="_blank">Voir le spectacle</a>
+                </article>
+                <article>
+                    <img src="img/dragon.jpg" alt="Affiche du spectacle Le Dragon">
+                    <h3>Le Dragon</h3>
+                    <p>Du 28 au 29 novembre 2025</p>
+                    <a href="https://www.helloasso.com/associations/le-charivari-theatre/evenements/le-dragon-1"
+                        target="_blank">Voir le spectacle</a>
+                </article>
+                <article>
+                    <img src="img/nuit.jpg" alt="Affiche du spectacle Le Songe d'une nuit d'été">
+                    <h3>Le Songe d'une nuit d'été</h3>
+                    <p>Du 29 au 30 novembre 2024</p>
+                    <a href="https://www.helloasso.com/associations/le-charivari-theatre/evenements/le-songe-d-une-nuit-d-ete-1"
+                        target="_blank">Voir le spectacle</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== GALERIE : vide. JavaScript la remplira (étapes 3 et 4) ===== -->
+        <section>
+            <h2>Galerie</h2>
+            <div id="galerie"></div>
+        </section>
+
+        <!-- ===== CONTACT : infos + carte + formulaire ===== -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div>
+                    <p>Présidente : Marie-Laure FERNANDES</p>
+                    <p>Metteur en scène : Vincent THOMAS</p>
+                    <p>Email : lecharivari@gmail.com</p>
+                </div>
+                <iframe class="carte" title="Carte Google Maps : Houplin-Ancoisne"
+                    src="https://www.google.com/maps/embed?pb=!4v1788791914252!6m8!1m7!1sP_SObQHbRQR1KzRpb93PlQ!2m2!1d50.56271034326961!2d3.002202627771178!3f59.63285000000002!4f0!5f0.7820865974627469"
+                    loading="lazy"></iframe>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="aa9b0bfc-9c2a-4f44-ab2b-711b11eb7777">
+
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="case">
+                    <input type="checkbox" name="consent" required>
+                    J'accepte les conditions d'utilisation
+                </label>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== PIED DE PAGE ===== -->
+    <footer>
+        <div id="social">
+            <a href="https://www.facebook.com/lecharivari/" target="_blank">Facebook</a>
+            <a href="https://www.facebook.com/lecharivari/reels/" target="_blank">Reels</a>
+            <a href="https://www.facebook.com/lecharivari/photos" target="_blank">Photos</a>
+        </div>
+    </footer>
+
+    <!-- Les scripts sont à la fin : le HTML est déjà chargé quand ils démarrent -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

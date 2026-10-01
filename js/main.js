@@ -1,6 +1,6 @@
  // 1. Sélectionner le bouton dans le HTML
  const boutonTheme = document.querySelector("#theme-toggle");
-
+boutonTheme.textContent = "Mode sombre 🌙";  //changer le texte du bouton
  // 2. Définir la fonction à éxécuter lors du clique
 function changerTheme() {
    // console.log("Le bouton a été cliqué!");  //cliquer 3fois sur le bouton sur site

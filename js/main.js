@@ -5,7 +5,12 @@
 function changerTheme() {
    // console.log("Le bouton a été cliqué!");  //cliquer 3fois sur le bouton sur site
    document.body.classList.toggle("dark-theme");
+   if (document.body.classList.contains("dark-theme")) {
+        boutonTheme.textContent = "Mode clair ☀️";
+    } else {
+        boutonTheme.textContent = "Mode sombre 🌙";    
     }
+}
 
 // 3. Ecouter le clic sur le bouton
 boutonTheme.addEventListener("click", changerTheme);
